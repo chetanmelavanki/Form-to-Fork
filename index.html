@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm to Fork - Fresh Produce Delivery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: url('https://images.unsplash.com/photo-1582515073490-39981397c445?ixlib=rb-1.2.1') center/cover;
+            height: 70vh;
+            position: relative;
+        }
+        
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .farmers-section,
+        .business-section {
+            background: #f8f9fa;
+        }
+        
+        .contact-section {
+            background: #e9ecef;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Farm to Fork</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#business">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#farmers">Farmers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="home">
+        <div class="overlay h-100 d-flex align-items-center">
+            <div class="container text-white text-center">
+                <h1 class="display-4 mb-4">Fresh Produce Straight From Farm</h1>
+                <p class="lead mb-4">100% Organic | Locally Sourced | Daily Delivery</p>
+                <button class="btn btn-light btn-lg">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="products">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Products</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <img src="https://source.unsplash.com/400x300/?vegetables" class="card-img-top" alt="Vegetables">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh Vegetables</h5>
+                            <p class="text-success fw-bold">₹99/kg</p>
+                            <button class="btn btn-outline-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <img src="https://source.unsplash.com/400x300/?fruits" class="card-img-top" alt="Fruits">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh Fruits</h5>
+                            <p class="text-success fw-bold">₹120/kg</p>
+                            <button class="btn btn-outline-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <img src="https://source.unsplash.com/400x300/?dairy" class="card-img-top" alt="Dairy">
+                        <div class="card-body">
+                            <h5 class="card-title">Organic Dairy</h5>
+                            <p class="text-success fw-bold">₹80/litre</p>
+                            <button class="btn btn-outline-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="business-section py-5" id="business">
+        <div class="container">
+            <h2 class="text-center mb-5">How It Works</h2>
+            <p class="text-center">We connect farmers directly with businesses and consumers, ensuring fresh produce reaches you efficiently.</p>
+            <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item">✔ Farmers list their fresh produce.</li>
+                <li class="list-group-item">✔ We coordinate logistics to ensure fast and safe delivery.</li>
+                <li class="list-group-item">✔ Partnered with top cafes, restaurants, and pubs for direct supply.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section py-5" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn btn-success w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Farm to Fork. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
